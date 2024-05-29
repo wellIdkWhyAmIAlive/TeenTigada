@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+:root {
+    /* --primary-color: #e45c5c; */
+    --primary-color: #356be0;
+    --primary-color-dark: #58fcff;
+    --primary-color-light: #F2F2F2;
+    --dark-color: #0f0e0e;
+    --text-dark: #181818;
+    --text-light: #6b7280;
+    --white: #ffffff;
+    --max-width: 1500px;
+}
+
+::selection {
+    background-color: var(--white);
+    color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section_container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.header_content .section_description {
+    margin-bottom: 2rem;
+}
+
+.section_header {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem;
+    /* color: var(--text-dark); */
+    color: white;
+    text-align: center;
+}
+
+.section_description {
+    /* color: var(--text-dark); */
+    color: white;
+    line-height: 1.75rem;
+    text-align: center;
+}
+
+.btn {
+    padding: .75rem 1.5rem;
+    outline: none;
+    border: none;
+    white-space: nowrap;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.logo a {
+    font-family: 'Indie Flower';
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.logo a span {
+    /* color: var(--text-dark); */
+    color: white;
+}
+
+img {
+    display: flex;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+ul {
+    list-style: none;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    background-color: #181818;
+    color: var(--white);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    position: fixed;
+    isolation: isolate;
+    width: 100%;
+    z-index: 9;
+}
+
+.nav_header {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+}
+
+.nav_menu_btn {
+    cursor: pointer;
+}
+
+.nav_logo a {
+    color: var(--white);
+}
+
+.nav_links {
+    position: absolute;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--primary-color-light);
+    transition: .5s;
+    z-index: -1;
+    transform: translateY(-100%)
+}
+
+.nav_links.open {
+    transform: translateY(0);
+}
+
+.nav_links a {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.nav_links a:hover {
+    color: var(--text-dark);
+}
+
+.header_container {
+    display: grid;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.header_img img {
+    max-width: var(--max-width);
+    height: 60vw;
+    object-fit: cover;
+    object-position: 50% 15%;
+    margin-inline: auto;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.14);
+}
+
+.header_img img:hover {
+    transform: translateY(-10px);
+}
+
+.header_content h1 {
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    /* color: var(--text-dark); */
+    color: white;
+    text-align: center;
+}
+
+.header_content h1 span {
+    font-family: 'Indie Flower';
+    color: var(--primary-color);
+}
+
+.header_content p {
+    /* color: var(--primary-color); */
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Handlee';
+}
+
+.card_container {
+    display: grid;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.info_container>h1 {
+    font-size: 3rem;
+    padding-bottom: 3rem;
+}
+
+.card_container h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.card_container {
+    /* background-color: #58fcff; */
+    /* position: relative; */
+    overflow: visible;
+    color: white;
+    background-color: var(--text-dark);
+    padding: 2rem;
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card_image img {
+    max-height: 17rem;
+    object-position: 50% 50%;
+    object-fit: cover;
+    /* position: absolute; */
+    max-width: 800px;
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+.card_wrapper {
+    display: grid;
+    gap: 5rem;
+}
+
+.card_content p {
+    padding-bottom: 2rem;
+}
+
+.card_content a {
+    /* width: 10rem; */
+    text-decoration: none;
+    font-weight: 600;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(14, 14, 14, 0.2);
+    transition: all 0.5s ease-in-out;
+    /* align-items: center; */
+}
+
+.card_content i {
+    text-align: right;
+}
+
+.card_content a:hover {
+    background-color: var(--primary-color-dark);
+    color: black;
+    transform: translateY(-10px);
+}
+
+.i-3 img {
+    object-position: 10% 35%;
+}
+
+.card_content h1,
+.card_content p,
+.card_content a {
+    transition: all 0.4s ease-in-out;
+    margin: 0 auto;
+    /* Add this to center the elements */
+    display: block;
+    /* Add this to make the elements block-level */
+}
+
+.card_content span {
+    font-family: 'Handlee';
+    font-size: 2rem;
+    color: var(--primary-color-dark);
+}
+
+@media(width>768px) {
+    nav {
+        position: static;
+        padding: 2rem 1rem;
+        max-width: var(--max-width);
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .nav_header {
+        flex: 1;
+        padding: 0;
+        background-color: transparent;
+    }
+    .nav_logo a {
+        color: var(--primary-color-light);
+    }
+    .nav_logo a span {
+        color: var(--primary-color-dark);
+    }
+    .nav_menu_btn {
+        display: none;
+    }
+    .nav_links {
+        position: static;
+        padding: 0;
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: transparent;
+        transform: none;
+    }
+    .nav_links a {
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+    .nav_links a:hover {
+        font-size: 1.1rem;
+        /* transform: translateY(-10px); */
+        color: var(--primary-color);
+    }
+    .header_img img {
+        height: 29rem;
+        object-position: 50% 15%;
+    }
+    .header_container {
+        grid-template-columns: 5fr 2fr;
+        align-items: center;
+    }
+    .header_content h1,
+    .header_content .section_description {
+        text-align: left;
+    }
+    .header_image {
+        grid-area: 1/2/2/3;
+    }
+    .card_image img {
+        max-height: 15rem;
+        transform: translate(-12%, -20%);
+        transition: all 0.5s ease-in-out;
+    }
+    .card_container {
+        grid-template-columns: 2fr 4fr;
+    }
+    .card_container h1 {
+        text-align: left;
+    }
+    .card_container p {
+        text-align: left;
+    }
+    .card_container a {
+        text-align: center;
+    }
+    .card_container:hover {
+        background-color: var(--dark-color);
+        cursor: context-menu;
+    }
+    /* .card_container:hover h1,
+    .card_container:hover p {
+        color: black;
+    } */
+    .card_container:hover img {
+        transform: translate(0);
+    }
+}
