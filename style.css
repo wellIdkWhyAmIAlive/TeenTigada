@@ -4,8 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 :root {
     /* --primary-color: #e45c5c; */
-    --primary-color: #356be0;
-    --primary-color-dark: #58fcff;
+    --primary-color: #e035bb;
+    --primary-color-dark: #ff5895;
     --primary-color-light: #F2F2F2;
     --dark-color: #0f0e0e;
     --text-dark: #181818;
@@ -318,6 +318,7 @@ nav {
 
 .memory_container>h1 {
     font-size: 3.2rem;
+    font-family: 'Poppins';
 }
 
 .memory_image {
@@ -342,6 +343,14 @@ nav {
         border-radius: 2rem;
         background-color: var(--primary-color-light);
         color: black;
+        cursor: default;
+        transition: all 0.5s ease-in-out;
+        box-shadow: inset 5px 5px 50px rgba(0, 0, 0, 0.4);
+    }
+    .memory_container>h1:hover {
+        transform: translateY(-10px);
+        background-color: var(--primary-color);
+        color: var(--white);
     }
 }
 
@@ -452,4 +461,9 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.zaina img {
+    object-fit: cover;
+    object-position: 70%;
 }
