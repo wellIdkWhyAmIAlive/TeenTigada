@@ -421,6 +421,7 @@ nav {
     }
     .card_container:hover {
         background-color: var(--dark-color);
+        box-shadow: inset 5px 5px 30px rgba(0, 0, 0, 0.4);
         cursor: context-menu;
     }
     /* .card_container:hover h1,
@@ -443,4 +444,12 @@ nav {
     .memory_image p {
         text-align: left;
     }
+}
+
+.disclaimer_container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
