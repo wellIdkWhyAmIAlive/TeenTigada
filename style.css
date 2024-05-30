@@ -321,6 +321,7 @@ nav {
 }
 
 .memory_image {
+    transition: all 0.7s ease;
     padding: 2rem;
     box-shadow: inset 5px 5px 30px 0 rgba(0, 0, 0, 0.4);
     border-radius: 2rem;
@@ -328,6 +329,20 @@ nav {
 
 .memory_image p {
     padding: 1rem;
+}
+
+.memory_image:hover {
+    background-color: var(--dark-color);
+}
+
+@media(width>700px) {
+    .memory_container>h1 {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 2rem;
+        background-color: var(--primary-color-light);
+        color: black;
+    }
 }
 
 @media(width>768px) {
