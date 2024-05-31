@@ -336,6 +336,68 @@ nav {
     background-color: var(--dark-color);
 }
 
+.birthday_wrapper {
+    padding: 3rem 2rem;
+    display: grid;
+    gap: 6rem;
+}
+
+.birthday_card img {
+    object-fit: cover;
+    max-width: 500px;
+    height: 300px;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.4);
+    display: block;
+    margin: 0 auto;
+}
+
+.birthday_card h1 {
+    padding-top: 2rem;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.birthday_card {
+    padding: 2rem 3rem;
+    border-radius: 1.5rem;
+    box-shadow: inset 5px 5px 30px rgba(0, 0, 0, 0.4);
+    transition: all 0.5s linear;
+}
+
+.birthday_card p {
+    font-size: 1.3rem;
+}
+
+.birthday_card:hover {
+    background-color: var(--dark-color);
+}
+
+.snippet_container {
+    padding: 3rem 2rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.snippet_container img {
+    max-width: 700px;
+    max-height: auto;
+    object-fit: contain;
+    border-radius: 2rem;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+    /* padding: 1rem; */
+    /* border: .3px solid #fff; */
+}
+
+.snippet_container img:hover {
+    transform: translateY(-10px);
+}
+
+.snippet_info_container {
+    font-size: 1.2rem;
+}
+
 @media(width>700px) {
     .memory_container>h1 {
         width: 100%;
@@ -352,6 +414,10 @@ nav {
         background-color: var(--primary-color);
         color: var(--white);
     }
+}
+
+.birthday_container {
+    min-height: 80vh;
 }
 
 @media(width>768px) {
@@ -440,9 +506,6 @@ nav {
     .card_container:hover img {
         transform: translate(0);
     }
-    .zaina {
-        grid-template-columns: 1fr 2fr;
-    }
     .container {
         grid-template-columns: 1fr 1fr;
     }
@@ -453,6 +516,27 @@ nav {
     .memory_image p {
         text-align: left;
     }
+    .birthday_wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .birthday_card h1 {
+        text-align: center;
+    }
+    .snippet_container {
+        grid-template-columns: 2fr 1fr;
+    }
+    .snippet_container p {
+        text-align: left;
+    }
+    .misc_container {
+        padding: 5rem;
+    }
+    .snippet_info_container {
+        display: flex;
+        font-size: 1.5rem;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .disclaimer_container {
@@ -461,9 +545,4 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.zaina img {
-    object-fit: cover;
-    object-position: 70%;
 }
