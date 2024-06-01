@@ -551,13 +551,11 @@ nav {
     flex-direction: column;
 }
 
-.footer {
-    padding-bottom: 2.5rem;
+.footer p {
+    padding-top: 1.2rem;
+    border-top: 1px solid #fff;
 }
 
-.line::before {
-    content: '';
-    max-height: 3px;
-    max-width: 800px;
-    border: top 1px solid white;
+.footer {
+    padding-bottom: 2.5rem;
 }
